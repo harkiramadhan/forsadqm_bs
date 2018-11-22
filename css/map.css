@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+svg {
+    height: auto;
+    max-width: 100%;
+}
+
+.subline {
+    color: #768191;
+    font-weight: normal;
+}
+
+.map {
+    margin-top: 3em;
+    position: relative;
+}
+
+.map-markers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.map-marker {
+    position: absolute;
+}
+
+.map-marker:after {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: pop;
+    border-radius: 50%;
+    border: 1px solid #A082D0;
+    content: '';
+    height: 2em;
+    left: 0;
+    margin: -.5em 0 0 -.5em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 2em;
+}
+
+.map-marker:hover .map-marker-info {
+    display: block;
+}
+
+.map-marker i {
+    background-color: #A082D0;
+    border-radius: 50%;
+    height: 1em;
+    display: block;
+    text-indent: -9999px;
+    width: 1em;
+}
+
+.map-marker-indonesia {
+    left: 81%;
+    top: 50%;
+}
+
+.map-marker-indonesia:after {
+    animation-delay: 5s;
+}
+
+.map-marker-mesir {
+    left: 58.5%;
+    top: 31%;
+}
+
+.map-marker-mesir:after {
+    animation-delay: 5s;
+}
+
+.map-marker-turki {
+    left: 58.5%;
+    top: 25%;
+}
+
+.map-marker-turki:after {
+    animation-delay: 5s;
+}
+
+.map-marker-sudan {
+    left: 59%;
+    top: 37%;
+}
+
+.map-marker-sudah:after {
+    animation-delay: 5s;
+}
+
+.map-marker-jepang {
+    left: 89%;
+    top: 25%;
+}
+
+.map-marker-jepang:after {
+    animation-delay: 5s;
+}
+
+.map-marker-libanon {
+    left: 60%;
+    top: 29%;
+}
+
+.map-marker-libanon:after {
+    animation-delay: 5s;
+}
+
+
+/*Indonesia*/
+
+.map-marker-jakarta {
+    left: 24.5%;
+    top: 70%;
+}
+
+.map-marker-jakarta:after {
+    animation-delay: 5s;
+}
+
+.map-marker-bandung {
+    left: 26%;
+    top: 73%;
+}
+
+.map-marker-bandung:after {
+    animation-delay: 5s;
+}
+
+.map-marker-bogor {
+    left: 22%;
+    top: 71%;
+}
+
+.map-marker-bogor:after {
+    animation-delay: 5s;
+}
+
+.map-marker-tangerang {
+    left: 21%;
+    top: 68%;
+}
+
+.map-marker-tangerang:after {
+    animation-delay: 5s;
+}
+
+.map-marker-jogja {
+    left: 33%;
+    top: 80%;
+}
+
+.map-marker-jogja:after {
+    animation-delay: 5s;
+}
+
+.map-marker-jateng {
+    top: 76%;
+    left: 31%;
+}
+
+.map-marker-jateng:after {
+    animation-delay: 5s;
+}
+
+.map-marker-aceh {
+    top: 5%;
+    left: 2%;
+}
+
+.map-marker-aceh:after {
+    animation-delay: 5s;
+}
+
+.map-marker-malang {
+    top: 80%;
+    left: 38%;
+}
+
+.map-marker-malang:after {
+    animation-delay: 5s;
+}
+
+.map-marker-sumatera {
+    top: 45%;
+    left: 16%;
+}
+
+.map-marker-sumatera:after {
+    animation-delay: 5s;
+}
+
+.map-marker-surabaya {
+    top: 74%;
+    left: 37%;
+}
+
+.map-marker-surabaya:after {
+    animation-delay: 5s;
+}
+
+.map-marker-sulawesi {
+    top: 44%;
+    left: 54%;
+}
+
+.map-marker-sulawesi:after {
+    animation-delay: 5s;
+}
+
+.map-marker-nusa {
+    top: 83%;
+    left: 46%;
+}
+
+.map-marker-nusa:after {
+    animation-delay: 5s;
+}
+
+.map-marker-jabar {
+    top: 75%;
+    left: 27%;
+}
+
+.map-marker-jabar:after {
+    animation-delay: 5s;
+}
+
+.map-marker-intl {
+    top: 5%;
+    left: 94%;
+}
+
+.map-marker-intl:after {
+    animation-delay: 5s;
+}
+
+.map-marker-info {
+    display: none;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -2em);
+    width: 20em;
+    z-index: 999;
+}
+
+.map-marker-info header {
+    background-color: #212529;
+    border-radius: .5em .5em 0 0;
+    color: #fff;
+    padding: .5em 1em;
+}
+
+.map-marker-info main {
+    background-color: #fff;
+    border-radius: 0 0 .5em .5em;
+    color: #7e7e7e;
+    padding: .5em 1em;
+}
+
+.map-marker-info h2 {
+    margin-bottom: 0;
+}
+
+.map-marker-info-inner {
+    border-radius: .5em;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+    font-size: .875em;
+}
+
+.map-marker-info-inner:after {
+    border-left: .75em solid transparent;
+    border-right: .75em solid transparent;
+    border-top: 1em solid #fff;
+    content: '';
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0;
+}
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes bounce-in {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.animate-bounce-in {
+    animation-duration: .75s;
+    animation-name: bounce-in;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    8% {
+        opacity: .4;
+    }
+    10% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.animate-pop {
+    animation-duration: 1s;
+    animation-name: pop;
+}
